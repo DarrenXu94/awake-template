@@ -6,13 +6,14 @@
   >
     <div class="navbar-brand">
       <nuxt-link class="navbar-item" to="/">
-        <site-logo v-if="$siteConfig.logo === 'logo-component'" />
+        <!-- <site-logo v-if="$siteConfig.logo === 'logo-component'" />
         <img
           v-else
           :src="$siteConfig.logo"
           :alt="$siteConfig.siteName"
           class="logo"
-        />
+        /> -->
+        <h2>Civic Lunch</h2>
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
@@ -60,6 +61,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.navbar-item h2 {
+  font-size: xx-large;
+}
 .navbar-item img {
   max-height: 2rem;
 }

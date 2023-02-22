@@ -5,7 +5,7 @@ category:
   - reviews
 author: Darren Xu
 date: 2023-02-15T00:05:52.616Z
-featureImage: https://images.unsplash.com/photo-1576863514292-542ef379c13b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80
+featureImage: /uploads/taki.jpeg
 ---
 T﻿aki is a quaint lil o Japanese restaurant located in the new fancy schmancy wannabe Chinatown of civic. It looks super sleek and modern from outside. I visited this fine establishment for a romantic workplace lunch date on valentines day.
 

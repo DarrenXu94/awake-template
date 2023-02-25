@@ -8,7 +8,7 @@
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <div class="content">
-          <h3>Fake Heading</h3>
+          <h3>What is this?</h3>
           <p>
             Are you always on the lookout for a delicious and affordable
             lunchtime meal? Well, look no further! In this blog, we'll be

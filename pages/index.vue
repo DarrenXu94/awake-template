@@ -25,6 +25,11 @@ import { loadFull } from 'tsparticles'
 import { setPageData } from '../helper'
 import NewsLetterFormModal from '~/components/NewsLetterFormModal'
 
+function randomIntFromInterval(min, max) {
+  // min and max included
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
 export default {
   name: 'HomePage',
   head() {
@@ -45,7 +50,18 @@ export default {
   async mounted() {
     await loadFull(tsParticles)
 
+    // eslint-disable-next-line
+    const particles = [...Array(30)].map(function(x, idx) {
+      return {
+        position: {
+          x: (100 / 30) * idx,
+          y: 0 + randomIntFromInterval(1, 20) - randomIntFromInterval(10, 20)
+        }
+      }
+    })
+
     await tsParticles.load('tsparticles', {
+      manualParticles: [...particles],
       particles: {
         color: {
           value: ['#FFFFFF', '#FFd700']
@@ -71,7 +87,7 @@ export default {
           }
         },
         number: {
-          value: 30,
+          value: 0,
           density: {
             enable: true,
             area: 800

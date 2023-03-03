@@ -60,6 +60,37 @@ export default {
       }
     })
 
+    const foods = [
+      'Bento box 1.png',
+      'Schnitty.png',
+      'curry.png',
+      'pie.png',
+      'street bao.png',
+      'Bento box 2.png',
+      'Spaghetti.png',
+      'dumplings.png',
+      'pizza.png',
+      'sushi.png',
+      'Fried chicken.png',
+      'Taco.png',
+      'fish and chips.png',
+      'rice and sauce.png',
+      'wrap.png',
+      'Kebab.png',
+      'brekky.png',
+      'hot dog.png',
+      'roll.png',
+      'yum cha.png',
+      'Ramen.png',
+      'burger and chips.png',
+      'stew.png',
+      'sandwich.png',
+      'Rice.png',
+      'burger.png',
+      'noodle box.png',
+      'steak.png'
+    ]
+
     await tsParticles.load('tsparticles', {
       manualParticles: [...particles],
       particles: {
@@ -132,8 +163,9 @@ export default {
           type: ['image'],
           options: {
             image: [
-              {
-                src: 'burger.svg',
+              // eslint-disable-next-line
+              ...foods.map((name) => ({
+                src: `food-icons/${name}`,
                 width: 32,
                 height: 32,
                 particles: {
@@ -141,77 +173,7 @@ export default {
                     value: 32
                   }
                 }
-              },
-              {
-                src: 'hotdog.svg',
-                width: 32,
-                height: 32,
-                particles: {
-                  size: {
-                    value: 32
-                  }
-                }
-              },
-              {
-                src: 'pizza.svg',
-                width: 32,
-                height: 32,
-                particles: {
-                  size: {
-                    value: 32
-                  }
-                }
-              },
-              {
-                src: 'eggplant.svg',
-                width: 32,
-                height: 32,
-                particles: {
-                  size: {
-                    value: 32
-                  }
-                }
-              },
-              {
-                src: 'icecream.svg',
-                width: 32,
-                height: 32,
-                particles: {
-                  size: {
-                    value: 32
-                  }
-                }
-              },
-              {
-                src: 'donut.svg',
-                width: 32,
-                height: 32,
-                particles: {
-                  size: {
-                    value: 32
-                  }
-                }
-              },
-              {
-                src: 'sushi.svg',
-                width: 32,
-                height: 32,
-                particles: {
-                  size: {
-                    value: 32
-                  }
-                }
-              },
-              {
-                src: 'pan.svg',
-                width: 32,
-                height: 32,
-                particles: {
-                  size: {
-                    value: 32
-                  }
-                }
-              }
+              }))
             ]
           }
         },

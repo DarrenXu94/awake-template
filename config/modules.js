@@ -15,7 +15,13 @@ export const modules = [
   '@nuxtjs/eslint-module',
   '@nuxtjs/style-resources',
   'nuxt-fontawesome',
-  'nuxt-responsive-loader'
+  'nuxt-responsive-loader',
+  [
+    'nuxt-leaflet',
+    {
+      /* module options */
+    }
+  ]
 ]
 if (siteConfig.googleAnalytics.on && siteConfig.googleAnalytics.id) {
   modules.push('@nuxtjs/google-gtag')

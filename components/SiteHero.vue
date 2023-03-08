@@ -12,7 +12,17 @@
           {{ title }}
         </h1>
         <h2 class="subtitle animated fadeInUp slower">
-          {{ subtitle }}
+          From the creator of
+          <a href="https://willitcereal.darrenxu.com/">
+            willitcereal
+          </a>
+
+          and
+          <a href="https://choccy.darrenxu.com/">
+            choccyblog
+          </a>
+
+          , CIVIC LUNCH is a HOT new lunch food review website!
         </h2>
         <br />
         <div

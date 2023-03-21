@@ -1,6 +1,7 @@
 ---
 title: Taki
 subtitle: Salmon Donburri bowl - $23
+tier: B
 category:
   - reviews
 author: Darren Xu

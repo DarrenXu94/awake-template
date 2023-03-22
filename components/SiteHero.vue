@@ -8,6 +8,8 @@
     />
     <div class="hero-body">
       <div class="container">
+        <img :src="$siteConfig.logo" :alt="$siteConfig.siteName" class="logo" />
+
         <h1 class="title animated fadeInUp">
           {{ title }}
         </h1>
@@ -70,6 +72,10 @@ export default {
   text-align: center;
   overflow: hidden;
   position: relative;
+}
+
+.logo {
+  max-height: 15rem;
 }
 
 .title {

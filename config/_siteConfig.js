@@ -12,7 +12,7 @@ export default {
   siteName: 'Civic lunch',
   tagline: 'Follow the lunch adventures of a young man',
   featureImage: '/uploads/civic-hero.jpeg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  logo: '/civic-lunch-logo.png', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID

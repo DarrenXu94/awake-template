@@ -75,7 +75,10 @@ export default {
 }
 
 .logo {
-  max-height: 15rem;
+  max-height: 7rem;
+  @media (min-width: 768px) {
+    max-height: 15rem;
+  }
 }
 
 .title {

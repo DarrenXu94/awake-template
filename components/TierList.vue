@@ -1,6 +1,10 @@
 <template>
   <div class="tier" :class="`tier-${ranking}`">
-    <b> Tier: {{ ranking }} </b>
+    <!-- <b> Tier: {{ ranking }} </b> -->
+    <img
+      :src="`./tier-logos/${ranking}-tier.png`"
+      :alt="`tier-${ranking} logo`"
+    />
   </div>
 </template>
 <script>
@@ -17,5 +21,9 @@ export default {
 <style lang="scss" scoped>
 .tier {
   font-size: xx-large;
+
+  img {
+    max-height: 10rem;
+  }
 }
 </style>

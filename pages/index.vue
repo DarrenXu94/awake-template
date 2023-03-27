@@ -83,7 +83,6 @@ export default {
       'yum cha.png',
       'Ramen.png',
       'burger and chips.png',
-      'stew.png',
       'sandwich.png',
       'Rice.png',
       'burger.png',

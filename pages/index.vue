@@ -13,18 +13,19 @@
       </template>
     </main-section>
     <news-letter-form-modal />
-    <keep-alive>
+    <!-- <keep-alive>
       <Particles />
-    </keep-alive>
+    </keep-alive> -->
   </div>
 </template>
 
 <script>
 import { mapState } from 'vuex'
 
+import JSConfetti from 'js-confetti'
 import { setPageData } from '../helper'
 import NewsLetterFormModal from '~/components/NewsLetterFormModal'
-import Particles from '~/components/Particles'
+// import Particles from '~/components/Particles'
 
 export default {
   name: 'HomePage',
@@ -34,14 +35,22 @@ export default {
     }
   },
   components: {
-    NewsLetterFormModal,
-    Particles
+    NewsLetterFormModal
+    // Particles
   },
   computed: {
     ...mapState(['title', 'subtitle', 'featureImage'])
   },
   fetch({ store, params }) {
     setPageData(store, { slug: 'home' })
+  },
+  mounted() {
+    const jsConfetti = new JSConfetti()
+
+    jsConfetti.addConfetti({
+      emojis: ['🍔', '🌯', '🍦', '🍡', '🍱', '🍙', '🍰', '🍟', '🍗', '🍕'],
+      emojiSize: 40
+    })
   }
 }
 </script>

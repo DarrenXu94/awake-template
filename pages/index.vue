@@ -11,9 +11,6 @@
       </template>
     </main-section>
     <news-letter-form-modal />
-    <!-- <keep-alive>
-      <Particles />
-    </keep-alive> -->
   </div>
 </template>
 
@@ -23,7 +20,6 @@ import { mapState } from 'vuex'
 import JSConfetti from 'js-confetti'
 import { setPageData } from '../helper'
 import NewsLetterFormModal from '~/components/NewsLetterFormModal'
-// import Particles from '~/components/Particles'
 
 export default {
   name: 'HomePage',
@@ -34,7 +30,6 @@ export default {
   },
   components: {
     NewsLetterFormModal
-    // Particles
   },
   computed: {
     ...mapState(['title', 'subtitle', 'featureImage'])

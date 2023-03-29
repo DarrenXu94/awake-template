@@ -56,15 +56,15 @@ export default {
 
   // Newsletter Subscribe
   newsletter: {
-    on: false,
-    heading: 'Subscribe to Our Newsletter',
+    on: true,
+    heading: 'Subscribe for tasty, tasty updates',
     btnText: 'Subscribe',
     // Can be the form action on a mail chimp form, a hubspot form,
     // or any other url you want to post the form data to
     mailchimp: {
-      on: false,
+      on: true,
       formAction:
-        'https://danielkelly.us3.list-manage.com/subscribe/post?u=d3c2e762b66a2353d0bc29bf3&amp;id=2abeaa06e0'
+        'https://gmail.us21.list-manage.com/subscribe/post?u=3a225e4f754352f9f0bfbee95&amp;id=019d86465a&amp;f_id=0058a0e1f0" method="post" id="mc-embedded-subscribe-form'
     },
     custom: {
       on: false,

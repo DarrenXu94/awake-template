@@ -1,7 +1,5 @@
 <template>
   <div id="home-page" class="page-wrapper home-page">
-    <div id="tsparticles"></div>
-
     <site-hero :title="title" :subtitle="subtitle" :image="featureImage">
     </site-hero>
     <main-section theme="one-column">
@@ -59,20 +57,5 @@ export default {
 .home-page .under-subtitle {
   border-top: none;
   position: relative;
-}
-
-/* #my-canvas {
-  position: absolute;
-  z-index: 1;
-} */
-
-#tsparticles {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  pointer-events: none;
 }
 </style>

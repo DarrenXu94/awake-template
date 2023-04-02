@@ -3,7 +3,7 @@ title: iPho
 subtitle: Rare beef and beef ball soup - $17
 tier: B
 category:
-  - reviews
+  - B tier
 author: Darren Xu
 date: 2023-03-14T05:56:20.879Z
 featureImage: /uploads/pho.jpeg

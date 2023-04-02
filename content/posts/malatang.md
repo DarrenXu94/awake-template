@@ -1,7 +1,6 @@
 ---
 title: Malatang
 subtitle: Original soup noodles - $21
-tier: S
 category:
   - S tier
 author: Darren Xu

@@ -8,7 +8,13 @@
     />
     <div class="hero-body">
       <div class="container">
-        <img :src="$siteConfig.logo" :alt="$siteConfig.siteName" class="logo" />
+        <nuxt-link :to="`/`">
+          <img
+            :src="$siteConfig.logo"
+            :alt="$siteConfig.siteName"
+            class="logo"
+          />
+        </nuxt-link>
 
         <h1 class="title animated fadeInUp">
           {{ title }}

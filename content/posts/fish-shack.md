@@ -1,9 +1,7 @@
 ---
 title: Fish shack
 subtitle: Shack basket - $20
-tier: A
 category:
-  - reviews
   - A tier
 author: Darren Xu
 date: 2023-03-28T08:52:33.953Z

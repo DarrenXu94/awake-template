@@ -15,7 +15,7 @@
       <template v-slot:default>
         <div class="post-wrapper">
           <markdown :markdown="$store.state.content" />
-          <TierList :ranking="tier" />
+          <TierList :categories="category" />
           <div class="other-posts">
             <h6 class="subtitle is-size-4">
               Related Posts

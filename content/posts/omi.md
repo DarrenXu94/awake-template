@@ -1,7 +1,6 @@
 ---
 title: OMI
 subtitle: Pork Scotch - $18 (+$2 EXTRA EGG)
-tier: A
 category:
   - A tier
 author: Darren Xu

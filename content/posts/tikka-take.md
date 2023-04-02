@@ -1,7 +1,6 @@
 ---
 title: Tikka Take
 subtitle: Butter chicken - $20
-tier: B
 category:
   - B tier
 author: Darren Xu

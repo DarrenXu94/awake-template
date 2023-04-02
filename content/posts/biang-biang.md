@@ -3,7 +3,7 @@ title: Biang biang
 subtitle: Meat n noodles - $16
 tier: A
 category:
-  - reviews
+  - A tier
 author: Darren Xu
 date: 2023-03-06T06:03:00.435Z
 featureImage: /uploads/biang.jpeg

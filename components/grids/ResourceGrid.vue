@@ -6,10 +6,8 @@
     <presentational-grid
       v-else
       :items="resources"
-      :bottom-loader="!allLoaded && firstPageLoaded"
       :theme="theme"
       :per-row="perRow"
-      @atEnd="loadMore()"
     >
       <template v-slot:default="{ item }">
         <slot :item="item"></slot>
@@ -57,6 +55,7 @@ export default {
   },
   created() {
     this.$eventBus.$on('route-changed', this.reset)
+    this.loadMore()
   },
   destroyed() {
     this.$eventBus.$off('route-changed', this.reset)
@@ -90,10 +89,12 @@ export default {
         this.allLoaded = true
       } else {
         try {
-          resources = await this.resourceController.getByPage(
-            this.page,
-            this.resourceFilters
-          )
+          const allResults = await this.resourceController.getAll()
+          // eslint-disable-next-line arrow-parens
+          resources = allResults.filter((blog) => {
+            // eslint-disable-next-line arrow-parens
+            return blog.category.some((cat) => this.category.includes(cat))
+          })
         } catch (err) {
           this.allLoaded = true
           return

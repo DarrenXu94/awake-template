@@ -3,7 +3,7 @@ title: Sandoochie
 subtitle: Turkey and cranberry Sandwich/Eggplant schnitzel - $13 ea
 tier: B
 category:
-  - reviews
+  - B tier
 author: Darren Xu
 date: 2023-03-21T05:15:51.629Z
 featureImage: /uploads/sandoochie.jpeg

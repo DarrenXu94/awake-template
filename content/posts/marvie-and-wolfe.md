@@ -3,7 +3,7 @@ title: Marvie and Wolfe
 subtitle: Grilled chicken salad - $16
 tier: A
 category:
-  - reviews
+  - A tier
 author: Darren Xu
 date: 2023-03-07T09:19:21.094Z
 featureImage: /uploads/marvie.jpeg

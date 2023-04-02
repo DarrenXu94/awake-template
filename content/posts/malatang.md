@@ -3,7 +3,7 @@ title: Malatang
 subtitle: Original soup noodles - $21
 tier: S
 category:
-  - reviews
+  - S tier
 author: Darren Xu
 date: 2023-03-01T08:25:47.370Z
 featureImage: /uploads/malatang.jpeg

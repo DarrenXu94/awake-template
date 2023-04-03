@@ -8,6 +8,7 @@
       :items="resources"
       :theme="theme"
       :per-row="perRow"
+      @atEnd="loadMore()"
     >
       <template v-slot:default="{ item }">
         <slot :item="item"></slot>
@@ -89,12 +90,21 @@ export default {
         this.allLoaded = true
       } else {
         try {
-          const allResults = await this.resourceController.getAll()
-          // eslint-disable-next-line arrow-parens
-          resources = allResults.filter((blog) => {
+          if (this.category.length) {
+            const allResults = await this.resourceController.getAll()
             // eslint-disable-next-line arrow-parens
-            return blog.category.some((cat) => this.category.includes(cat))
-          })
+            resources = allResults.filter((blog) => {
+              // eslint-disable-next-line arrow-parens
+              return blog.category.some((cat) => this.category.includes(cat))
+            })
+
+            this.allLoaded = true
+          } else {
+            resources = await this.resourceController.getByPage(
+              this.page,
+              this.resourceFilters
+            )
+          }
         } catch (err) {
           this.allLoaded = true
           return

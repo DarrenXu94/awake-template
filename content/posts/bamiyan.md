@@ -7,7 +7,7 @@ author: Darren Xu
 date: 2023-04-17T10:48:17.583Z
 featureImage: /uploads/bamiyan.jpeg
 ---
-Bamiyan is a cute lil Afghan shop that serves tasty meats. I've been here a few times at lunch and it's always quiet, no idea why because the food slaps hard. 
+Bamiyan, more like BamiYUM am I right? Bamiyan is a cute lil Afghan shop that serves tasty meats. I've been here a few times at lunch and it's always quiet, no idea why because the food slaps hard. 
 
 Today we got the Kabuli Pallow with lamb which is like oily rice with lamb chunks; and lemme say this rice is some of the tastiest rice I've had. And I'm Chinese. It also came with a curry which was noice but not mind blowing.
 

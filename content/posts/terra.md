@@ -6,6 +6,7 @@ category:
 author: Darren Xu
 date: 2023-02-28T05:38:56.397Z
 featureImage: /uploads/terra.jpeg
+location: -35.278479, 149.127088
 ---
 Terra is a cute lil Western style BBQ restaurant. It is located a bit further out the city center but still an easy walk (10 min?). The service style is kinda like a cafeteria if the cafeteria was boujee. 
 

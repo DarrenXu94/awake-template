@@ -16,6 +16,7 @@
         <div class="post-wrapper">
           <markdown :markdown="$store.state.content" />
           <TierList :categories="category" />
+          <SingleMap v-if="location" :name="title" :location="location" />
           <div class="other-posts">
             <h6 class="subtitle is-size-4">
               Related Posts
@@ -39,11 +40,13 @@ import { setPageData, getFormattedDate } from '../helper'
 import Markdown from '~/components/Markdown'
 import PostSidebar from '~/components/PostSidebar'
 import TierList from '~/components/TierList'
+import SingleMap from '~/components/SingleMap'
 export default {
   components: {
     Markdown,
     PostSidebar,
-    TierList
+    TierList,
+    SingleMap
   },
   computed: {
     ...mapState([
@@ -54,7 +57,8 @@ export default {
       'underSubtitle',
       'author',
       'category',
-      'slug'
+      'slug',
+      'location'
     ]),
     date() {
       return getFormattedDate(this.$store.state.date)

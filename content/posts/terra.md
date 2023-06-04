@@ -2,7 +2,7 @@
 title: Terra
 subtitle: Lunch Protein and 2 sides deal - $26
 category:
-  - reviews
+  - S tier
 author: Darren Xu
 date: 2023-02-28T05:38:56.397Z
 featureImage: /uploads/terra.jpeg

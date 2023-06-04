@@ -8,11 +8,29 @@
     />
     <div class="hero-body">
       <div class="container">
+        <nuxt-link :to="`/`">
+          <img
+            :src="$siteConfig.logo"
+            :alt="$siteConfig.siteName"
+            class="logo"
+          />
+        </nuxt-link>
+
         <h1 class="title animated fadeInUp">
           {{ title }}
         </h1>
         <h2 class="subtitle animated fadeInUp slower">
-          {{ subtitle }}
+          From the creator of
+          <a href="https://willitcereal.darrenxu.com/">
+            willitcereal
+          </a>
+
+          and
+          <a href="https://choccy.darrenxu.com/">
+            choccyblog
+          </a>
+
+          , CIVIC LUNCH is a HOT new lunch food review website!
         </h2>
         <br />
         <div
@@ -60,6 +78,13 @@ export default {
   text-align: center;
   overflow: hidden;
   position: relative;
+}
+
+.logo {
+  max-height: 7rem;
+  @media (min-width: 768px) {
+    max-height: 15rem;
+  }
 }
 
 .title {

@@ -6,7 +6,6 @@
     <presentational-grid
       v-else
       :items="resources"
-      :bottom-loader="!allLoaded && firstPageLoaded"
       :theme="theme"
       :per-row="perRow"
       @atEnd="loadMore()"
@@ -57,13 +56,13 @@ export default {
   },
   created() {
     this.$eventBus.$on('route-changed', this.reset)
+    this.loadMore()
   },
   destroyed() {
     this.$eventBus.$off('route-changed', this.reset)
   },
   methods: {
     reset() {
-      console.log('resetting resource grid')
       this.resourceController.reset()
       this.page = 0
       this.allLoaded = false
@@ -91,10 +90,21 @@ export default {
         this.allLoaded = true
       } else {
         try {
-          resources = await this.resourceController.getByPage(
-            this.page,
-            this.resourceFilters
-          )
+          if (this.category.length) {
+            const allResults = await this.resourceController.getAll()
+            // eslint-disable-next-line arrow-parens
+            resources = allResults.filter((blog) => {
+              // eslint-disable-next-line arrow-parens
+              return blog.category.some((cat) => this.category.includes(cat))
+            })
+
+            this.allLoaded = true
+          } else {
+            resources = await this.resourceController.getByPage(
+              this.page,
+              this.resourceFilters
+            )
+          }
         } catch (err) {
           this.allLoaded = true
           return

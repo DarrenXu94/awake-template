@@ -15,6 +15,7 @@
       <template v-slot:default>
         <div class="post-wrapper">
           <markdown :markdown="$store.state.content" />
+          <TierList :categories="category" />
           <div class="other-posts">
             <h6 class="subtitle is-size-4">
               Related Posts
@@ -37,15 +38,18 @@ import { setPageData, getFormattedDate } from '../helper'
 // import 'highlight.js/styles/github.css'
 import Markdown from '~/components/Markdown'
 import PostSidebar from '~/components/PostSidebar'
+import TierList from '~/components/TierList'
 export default {
   components: {
     Markdown,
-    PostSidebar
+    PostSidebar,
+    TierList
   },
   computed: {
     ...mapState([
       'title',
       'subtitle',
+      'tier',
       'featureImage',
       'underSubtitle',
       'author',

@@ -3,9 +3,9 @@
     <div class="page-wrapper map-page container">
       <div id="map-wrap" style="height: 100%">
         <client-only>
-          <l-map :zoom="17" :center="formatLocation">
+          <l-map :zoom="17" :center="formatLocation" ref="leaflet">
             <l-tile-layer
-              url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
+              url="https://{s}.tile.osm.org/{z}/{x}/{y}.png"
             ></l-tile-layer>
             <l-marker :lat-lng="formatLocation" @ready="(e) => checkAndOpen(e)">
               <l-popup>
@@ -38,11 +38,6 @@ export default {
   data() {
     return {}
   },
-  methods: {
-    checkAndOpen(mapObject) {
-      mapObject.openPopup()
-    }
-  },
   computed: {
     formatLocation() {
       return (
@@ -52,6 +47,17 @@ export default {
           .map((val) => parseFloat(val))
       )
     }
+  },
+  methods: {
+    checkAndOpen(mapObject) {
+      mapObject.openPopup()
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      console.log(this.$refs.leaflet)
+      this.$refs.leaflet.mapObject.invalidateSize()
+    }, 100)
   }
 }
 </script>

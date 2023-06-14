@@ -2,7 +2,7 @@
   <div class="tier">
     <!-- <b> Tier: {{ ranking }} </b> -->
     <nuxt-link :to="`/categories/${getTier}`">
-      <img :src="`./tier-logos/${getTier}.png`" :alt="`${getTier} logo`" />
+      <img :src="`/tier-logos/${getTier}.png`" :alt="`${getTier} logo`" />
     </nuxt-link>
   </div>
 </template>

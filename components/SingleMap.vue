@@ -62,12 +62,6 @@ export default {
     checkAndOpen(mapObject) {
       mapObject.openPopup()
     }
-  },
-  mounted() {
-    setTimeout(() => {
-      console.log(this.$refs.leaflet)
-      this.$refs.leaflet.mapObject.invalidateSize()
-    }, 100)
   }
 }
 </script>

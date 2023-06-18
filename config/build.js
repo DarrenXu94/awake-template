@@ -23,8 +23,7 @@ if (process.env.NODE_ENV === 'production') {
         content: [
           './pages/**/*.vue',
           './layouts/**/*.vue',
-          './components/**/*.vue',
-          'leaflet/dist/leaflet.css'
+          './components/**/*.vue'
         ],
         css: css,
         whitelist: [
@@ -53,9 +52,16 @@ if (process.env.NODE_ENV === 'production') {
           'tr',
           'tbody',
           'thead',
-          'tfoot'
+          'tfoot',
+          'lvml'
         ],
-        whitelistPatterns: [/theme/g, /spinner-position/, /fa/, /table/g]
+        whitelistPatterns: [
+          /theme/g,
+          /spinner-position/,
+          /fa/,
+          /table/g,
+          /leaflet/g
+        ]
       })
     ]
   }

@@ -54,13 +54,8 @@ if (process.env.NODE_ENV === 'production') {
           'thead',
           'tfoot'
         ],
-        whitelistPatterns: [
-          /theme/g,
-          /spinner-position/,
-          /fa/,
-          /table/g,
-          /leaflet/g
-        ]
+        whitelistPatterns: [/theme/g, /spinner-position/, /fa/, /table/g],
+        whitelistPatternsChildren: [/leaflet/g]
       })
     ]
   }

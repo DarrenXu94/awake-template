@@ -22,8 +22,8 @@ if (process.env.NODE_ENV === 'production') {
       purgecss({
         content: [
           './pages/**/*.vue',
-          './layouts/**/*.vue'
-          // './components/**/*.vue'
+          './layouts/**/*.vue',
+          './components/**/*.vue'
         ],
         css: css,
         whitelist: [
@@ -60,7 +60,7 @@ if (process.env.NODE_ENV === 'production') {
           /spinner-position/,
           /fa/,
           /table/g,
-          /leaflet/g
+          /leaflet/
         ]
       })
     ]

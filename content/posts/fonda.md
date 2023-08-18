@@ -5,7 +5,7 @@ category:
   - B tier
 author: Darren Xu
 date: 2023-08-18T07:49:17.745Z
-featureImage: https://www.fondamexican.com.au/wp-content/uploads/2021/07/Fonda_HeroBurrito16x9-scaled-1.jpeg
+featureImage: /uploads/fonda.jpeg
 location: -35.27679516758872, 149.1321388693106
 ---
 Every time I walk past this place it is chocca bloc full of people so I had high expectations. The restaurant is pretty new and I've always wanted to try it. I normally love mexican food but this place was pretty meh to me.

@@ -6,7 +6,7 @@ category:
 author: Darren Xu
 date: 2023-09-06T07:24:54.012Z
 featureImage: /uploads/11041194.jpeg
-location: -35.27569890847498, 149.12818756928718
+location: -35.2788148, 149.1287985
 ---
 Asian noodle house is a cute lil ..uhh.. asian themed restaurant. I arrived for lunch at 12:30 and there were only two seats left of a full room. Mostly white people.
 
